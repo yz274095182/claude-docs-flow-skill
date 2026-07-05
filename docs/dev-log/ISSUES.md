@@ -1,15 +1,15 @@
-# Issues
+# 问题记录
 
-This file records real problems, blockers, and deferred risks.
+本文件记录真实问题、阻塞项和后置风险。
 
-## Known Issues
+## 已知问题
 
-### 2026-07-05: Windows PowerShell 5 misread UTF-8 script content without BOM
+### 2026-07-05：Windows PowerShell 5 会误读无 BOM UTF-8 脚本内容
 
-Status: resolved
+状态：resolved
 
-Symptom: `scripts/validate.ps1` initially failed to parse after a Chinese string was placed directly inside the `.ps1` file.
+现象：曾经把中文字符串直接放入 `.ps1` 后，`scripts/validate.ps1` 出现解析失败。
 
-Cause: Windows PowerShell 5 can read UTF-8 no-BOM scripts through the legacy code page, corrupting non-ASCII bytes before parsing.
+原因：Windows PowerShell 5 可能用旧代码页读取无 BOM UTF-8 脚本，导致非 ASCII 字节在解析前损坏。
 
-Handling: Keep PowerShell script source ASCII-only. Chinese remains in Markdown templates and can still be passed as runtime arguments and written with `-Encoding UTF8`.
+处理：PowerShell 脚本源码保持 ASCII-only。中文放在 Markdown 模板中，或作为运行时参数传入，再用 `-Encoding UTF8` 写入文件。

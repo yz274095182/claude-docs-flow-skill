@@ -1,21 +1,21 @@
 # {{TITLE}} - Handoff
 
-## Current State
+## 当前状态
 
-Describe what is complete and what remains.
+描述已完成内容和剩余事项。
 
-## Changed Files
-
-- 
-
-## Important Decisions
+## 变更文件
 
 - 
 
-## Open Questions Or Risks
+## 重要决策
 
 - 
 
-## Next Recommended Step
+## 未决问题或风险
+
+- 
+
+## 下一步建议
 
 - 

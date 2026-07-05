@@ -1,23 +1,23 @@
-# {{TITLE}} - Validation
+# {{TITLE}} - 验证记录
 
-## Commands Run
-
-- 
-
-## Browser Or Manual Checks
+## 已运行命令
 
 - 
 
-## Artifacts Reviewed
-
-- HTML demos:
-- Screenshots:
-- Reports:
-
-## Not Run
+## 浏览器或手工检查
 
 - 
 
-## Result
+## 已审查产物
 
-Pending.
+- HTML demo：
+- 截图：
+- 报告：
+
+## 未运行
+
+- 
+
+## 结果
+
+待验证。

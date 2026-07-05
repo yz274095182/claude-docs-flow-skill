@@ -1,64 +1,64 @@
 ---
 name: project-docs-flow
-description: Initialize and maintain a docs-first Claude Code project workflow. Use when the user wants Claude Code project rules, CLAUDE.md memory, docs/dev-log files, per-requirement folders under .claude/requirements, requirement/spec/backend/frontend design docs, resource and output directories, HTML demos, screenshots, validation records, or a reusable project documentation flow.
+description: 初始化并维护 docs-first Claude Code 项目工作流。Use when the user wants Claude Code project rules, CLAUDE.md memory, docs/dev-log files, per-requirement folders under .claude/requirements, requirement/spec/backend/frontend design docs, resource and output directories, HTML demos, screenshots, validation records, or a reusable project documentation flow.
 ---
 
 # Project Docs Flow
 
-Use this skill to make a project self-orienting and to keep each requirement's docs, resources, demos, screenshots, and validation evidence together.
+使用这个 skill 让项目具备稳定的文档化上下文，并把每个需求的文档、资源、demo、截图和验证证据收束在同一个需求包里。
 
-## Command Intent
+## 命令意图
 
-Interpret the user's request after `/project-docs-flow`:
+解析 `/project-docs-flow` 后面的用户意图：
 
-- `init`: install project rules, dev-log files, and the requirement template into the current project.
-- `new <title>`: create a new requirement package under `.claude/requirements/<YYYYMMDD-slug>/`.
-- `continue <slug>`: read the project docs and that requirement package before doing more work.
-- `close <slug>`: update validation, handoff, and project dev-log entries before finishing.
+- `init`：在当前项目中安装项目规则、dev-log 文件和需求包模板。
+- `new <title>`：在 `.claude/requirements/<YYYYMMDD-slug>/` 下创建一个新需求包。
+- `continue <slug>`：先读取项目文档和对应需求包，再继续工作。
+- `close <slug>`：收尾前更新验证记录、handoff 和项目 dev-log。
 
-If the command is unclear, infer the closest workflow from the user's words and explain the assumption.
+如果命令不清晰，根据用户文字推断最接近的工作流，并说明你的假设。
 
-## Read First
+## 优先读取
 
-Before implementation or design work in an initialized project, read:
+在已初始化项目里做实现或设计前，先读取：
 
 1. `CLAUDE.md`
 2. `docs/dev-log/CURRENT.md`
 3. `docs/dev-log/DECISIONS.md`
 4. `docs/dev-log/ISSUES.md`
-5. The active requirement package files, especially `REQUEST.md`, `SPEC.md`, `TASKS.md`, `VALIDATION.md`, and `HANDOFF.md`
+5. 当前需求包文件，尤其是 `REQUEST.md`、`SPEC.md`、`TASKS.md`、`VALIDATION.md` 和 `HANDOFF.md`
 
-## Workflow
+## 工作流
 
-For `init`, run the bundled script:
+执行 `init` 时，运行内置脚本：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File <skill-root>\scripts\init-project.ps1 -ProjectRoot <project-root>
 ```
 
-For `new <title>`, run:
+执行 `new <title>` 时，运行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File <skill-root>\scripts\new-requirement.ps1 -ProjectRoot <project-root> -Title "<title>"
 ```
 
-After creating the package, fill `REQUEST.md` from the user's raw request and sketch the initial `SPEC.md`/`TASKS.md` if enough information is available.
+创建需求包后，把用户原始请求写入 `REQUEST.md`。如果信息足够，再补一版初始 `SPEC.md` 和 `TASKS.md`。
 
-For `continue <slug>`, read the package first, then continue from `TASKS.md` and `HANDOFF.md`. Keep new evidence inside the same package.
+执行 `continue <slug>` 时，先读对应需求包，再从 `TASKS.md` 和 `HANDOFF.md` 继续。新证据继续放在同一个需求包内。
 
-For `close <slug>`, update:
+执行 `close <slug>` 时，更新：
 
-- `<requirement>/VALIDATION.md` with checks run and checks not run.
-- `<requirement>/HANDOFF.md` with what changed, remaining work, and next command.
-- `docs/dev-log/CURRENT.md` with project-level status.
-- `docs/dev-log/DECISIONS.md` only for durable decisions.
-- `docs/dev-log/ISSUES.md` only for real problems or deferred risks.
+- `<requirement>/VALIDATION.md`：记录已运行和未运行的检查。
+- `<requirement>/HANDOFF.md`：记录变更、剩余事项和下一步建议。
+- `docs/dev-log/CURRENT.md`：记录项目级当前状态。
+- `docs/dev-log/DECISIONS.md`：只记录长期有效决策。
+- `docs/dev-log/ISSUES.md`：只记录真实问题或后置风险。
 
-## Requirement Package Rules
+## 需求包规则
 
-Read `references/requirement-package.md` when creating or reorganizing requirement folders.
+创建或整理需求包时，读取 `references/requirement-package.md`。
 
-Use this default package shape:
+默认需求包结构：
 
 ```txt
 .claude/requirements/<YYYYMMDD-slug>/
@@ -78,12 +78,12 @@ Use this default package shape:
   scratch/
 ```
 
-## Artifact Policy
+## 产物策略
 
-Read `references/artifact-policy.md` before deciding whether to keep generated assets. Track selected demos, screenshots, QA reports, and source assets that help review or reproduce the requirement. Keep temporary exploration in `scratch/`.
+决定是否保留生成产物前，读取 `references/artifact-policy.md`。保留有助于审查或复现需求的精选 demo、截图、QA 报告和源资源。临时探索放进 `scratch/`。
 
-## Project Memory Rules
+## 项目记忆规则
 
-Read `references/docs-system-pattern.md` when initializing or repairing project docs. Read `references/docs-flow-lessons.md` when the user asks why this workflow exists or wants the rationale behind the pattern.
+初始化或修复项目 docs 时，读取 `references/docs-system-pattern.md`。当用户询问这个工作流为什么存在，或需要理解背后的设计理由时，读取 `references/docs-flow-lessons.md`。
 
-Use durable files as the source of truth. Do not rely on chat history as the only record of requirements, decisions, issues, or validation.
+以稳定文件作为事实来源。不要把聊天历史当作需求、决策、问题或验证记录的唯一来源。

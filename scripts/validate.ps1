@@ -10,6 +10,7 @@ $skillMd = Join-Path $skill "SKILL.md"
 
 $requiredFiles = @(
   "README.md",
+  "README.en.md",
   "CLAUDE.md",
   ".gitignore",
   ".claude\skills\project-docs-flow\SKILL.md",

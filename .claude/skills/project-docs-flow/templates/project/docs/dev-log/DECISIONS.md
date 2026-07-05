@@ -1,13 +1,13 @@
-# Decisions
+# 决策记录
 
-This file records long-lived project decisions. Append new ADR-lite entries; do not rewrite history unless correcting a factual error.
+本文件记录长期有效的项目决策。新增 ADR-lite 记录时只追加；除非修正事实错误，否则不要重写历史。
 
-## Template
+## 模板
 
-### YYYY-MM-DD: Decision title
+### YYYY-MM-DD：决策标题
 
-Context:
+背景：
 
-Decision:
+决定：
 
-Impact:
+影响：

@@ -1,22 +1,22 @@
-# {{TITLE}} - Request
+# {{TITLE}} - 需求原文
 
-Date: {{DATE}}
-Slug: `{{SLUG}}`
+日期：{{DATE}}
+Slug：`{{SLUG}}`
 
-## Raw Request
+## 原始请求
 
-Paste or summarize the user's original request here. Preserve important wording and constraints.
+在这里粘贴或总结用户原始请求。保留重要措辞和约束。
 
-## Success Criteria
-
-- 
-
-## Constraints
+## 成功标准
 
 - 
 
-## Related Context
+## 约束
 
-- Project docs:
-- Related requirements:
-- Related issues:
+- 
+
+## 相关上下文
+
+- 项目文档：
+- 相关需求：
+- 相关问题：

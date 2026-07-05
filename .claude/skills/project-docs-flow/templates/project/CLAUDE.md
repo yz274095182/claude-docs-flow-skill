@@ -1,48 +1,48 @@
 # CLAUDE.md
 
-This file provides Claude Code guidance for `{{PROJECT_NAME}}`.
+本文件为 `{{PROJECT_NAME}}` 提供 Claude Code 工作指引。
 
-## Project Background
+## 项目背景
 
-Describe what this project is, who it is for, and the current stage.
+描述这个项目是什么、面向谁、当前处于什么阶段。
 
-## Source Of Truth
+## 事实来源
 
-Before development tasks, read:
+开始开发任务前，先读取：
 
 - `docs/dev-log/CURRENT.md`
 - `docs/dev-log/DECISIONS.md`
 - `docs/dev-log/ISSUES.md`
 
-For requirement-specific work, also read the active package under:
+如果是具体需求，还要读取当前需求包：
 
 ```txt
 .claude/requirements/<YYYYMMDD-slug>/
 ```
 
-## Working Directories
+## 工作目录
 
-- Project docs: `docs/`
-- Development log: `docs/dev-log/`
-- Requirement packages: `.claude/requirements/`
-- Claude local rules: `.claude/rules/`
+- 项目文档：`docs/`
+- 开发日志：`docs/dev-log/`
+- 需求包：`.claude/requirements/`
+- Claude 本地规则：`.claude/rules/`
 
-## Rules
+## 规则
 
-- Prefer existing project patterns over new abstractions.
-- Preserve user changes and do not revert unrelated work.
-- Keep secrets out of tracked files, examples, logs, and screenshots.
-- For Chinese Markdown, read and write UTF-8.
-- Keep request-level resources, demos, screenshots, validation, and handoff notes inside the active requirement package.
+- 优先复用项目现有模式，不轻易引入新抽象。
+- 保留用户改动，不回滚无关工作。
+- 不要把 secret 写进 tracked 文件、示例、日志或截图。
+- 中文 Markdown 使用 UTF-8 读写。
+- 需求级资源、demo、截图、验证和 handoff 记录都放在当前需求包里。
 
-## Validation
+## 验证
 
-Run available project checks after implementation. Record what passed and what could not run in both the active requirement package and project dev-log when relevant.
+实现后运行项目内可用检查。把通过项和未运行项记录到当前需求包；必要时同步到项目 dev-log。
 
-## Development Log
+## 开发日志
 
-At task end:
+任务收尾时：
 
-- Update `docs/dev-log/CURRENT.md` with current phase, recent work, verification, blockers, and next step.
-- Append `docs/dev-log/DECISIONS.md` only for durable decisions.
-- Add or update `docs/dev-log/ISSUES.md` only for real problems, blockers, or deferred risks.
+- 更新 `docs/dev-log/CURRENT.md`，记录当前阶段、最近完成、验证结果、阻塞项和下一步。
+- 只有出现长期有效决策时，才追加 `docs/dev-log/DECISIONS.md`。
+- 只有遇到真实问题、阻塞项或后置风险时，才新增或更新 `docs/dev-log/ISSUES.md`。

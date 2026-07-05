@@ -1,15 +1,15 @@
-# {{TITLE}} - Tasks
+# {{TITLE}} - 任务清单
 
-## Todo
+## 待办
 
-- [ ] Clarify or confirm the requirement.
-- [ ] Update `SPEC.md`.
-- [ ] Implement backend changes if needed.
-- [ ] Implement frontend changes if needed.
-- [ ] Add or update tests.
-- [ ] Capture validation evidence.
-- [ ] Update `HANDOFF.md`.
+- [ ] 澄清或确认需求。
+- [ ] 更新 `SPEC.md`。
+- [ ] 如需要，实现后端变更。
+- [ ] 如需要，实现前端变更。
+- [ ] 新增或更新测试。
+- [ ] 收集验证证据。
+- [ ] 更新 `HANDOFF.md`。
 
-## Done
+## 已完成
 
 -

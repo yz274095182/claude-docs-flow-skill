@@ -1,27 +1,27 @@
-# {{TITLE}} - Spec
+# {{TITLE}} - 可执行规格
 
-## Summary
+## 摘要
 
-Describe the current executable requirement.
+描述当前可执行需求。
 
-## In Scope
-
-- 
-
-## Out Of Scope
+## 范围内
 
 - 
 
-## Behavior
+## 范围外
 
 - 
 
-## Interfaces
+## 行为
 
-- Public API or command changes:
-- Data/schema changes:
-- UI entry points:
+- 
 
-## Acceptance Criteria
+## 接口
+
+- Public API 或命令变化：
+- 数据或 schema 变化：
+- UI 入口：
+
+## 验收标准
 
 - 

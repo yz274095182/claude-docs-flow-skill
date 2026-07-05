@@ -1,13 +1,13 @@
-# Issues
+# 问题记录
 
-This file records real problems, blockers, deferred risks, and resolved lessons.
+本文件记录真实问题、阻塞项、后置风险和已解决经验。
 
-Status values:
+状态值：
 
 - `open`
 - `resolved`
 - `deferred`
 
-## Known Issues
+## 已知问题
 
-None.
+无。

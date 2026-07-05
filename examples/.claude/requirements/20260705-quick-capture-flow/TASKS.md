@@ -1,9 +1,9 @@
-# Quick Capture Flow - Tasks
+# 快速记录流程 - 任务清单
 
-## Done
+## 已完成
 
-- [x] Wrote request and spec.
-- [x] Added backend and frontend design notes.
-- [x] Added demo HTML.
-- [x] Added visual evidence placeholder.
-- [x] Added validation and handoff notes.
+- [x] 编写需求原文和可执行规格。
+- [x] 添加后端和前端设计说明。
+- [x] 添加 HTML demo。
+- [x] 添加视觉证据占位。
+- [x] 添加验证和 handoff 记录。

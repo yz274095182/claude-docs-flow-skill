@@ -1,16 +1,16 @@
-# Quick Capture Flow - Handoff
+# 快速记录流程 - Handoff
 
-## Current State
+## 当前状态
 
-This is a sample requirement package used to demonstrate the docs-flow layout.
+这是一个示例需求包，用来展示 docs-flow 的目录结构。
 
-## Changed Files
+## 变更文件
 
-- Requirement docs.
-- Static HTML demo.
-- SVG screenshot placeholder.
-- Design QA report.
+- 需求文档。
+- 静态 HTML demo。
+- SVG 截图占位。
+- 设计 QA 报告。
 
-## Next Recommended Step
+## 下一步建议
 
-- Use `/project-docs-flow new "<title>"` in a real project to create a fresh package.
+- 在真实项目中使用 `/project-docs-flow new "<title>"` 创建新的需求包。

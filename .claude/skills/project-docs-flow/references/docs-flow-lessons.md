@@ -1,22 +1,22 @@
 # Docs Flow Lessons
 
-Use this as a compact rationale for the docs-flow workflow. The key lesson is that durable project docs beat chat history as the source of truth.
+这是一份 docs-flow 工作流的简短设计理由。核心经验是：长期项目应把稳定文档作为事实来源，而不是依赖聊天历史。
 
-## What Worked
+## 有效做法
 
-- Keep raw user intent separate from the executable spec.
-- Keep current status, long-lived decisions, and issues in separate files.
-- Use a short project rule file to tell future AI sessions what to read first.
-- Keep generated demos, screenshots, and QA notes near the requirement that produced them.
-- Merge useful subagent or thread output back into project docs.
+- 原始用户意图和当前可执行规格分开保存。
+- 当前状态、长期决策和问题记录分文件维护。
+- 用简短项目规则告诉后续 AI 会话应该先读什么。
+- 生成的 demo、截图和 QA 记录放在对应需求包旁边。
+- 多线程或子任务的有效输出必须合并回项目文档。
 
-## What To Avoid
+## 避免事项
 
-- Do not bury durable decisions in chat history.
-- Do not leave design prototypes and screenshots in random folders with no requirement context.
-- Do not put secrets in examples, dev logs, or templates.
-- Do not make the skill carry full project history. Put history in project docs.
+- 不要把长期决策埋在聊天记录里。
+- 不要把设计原型和截图散落在没有需求上下文的随机目录。
+- 不要把 secret 写进示例、dev-log 或模板。
+- 不要让 skill 承载完整项目历史；历史应放在项目 docs 里。
 
-## Transferable Pattern
+## 可迁移模式
 
-Use global or project-level Claude instructions for repeated workflow rules, `docs/dev-log/` for project memory, and `.claude/requirements/<date-slug>/` for feature-level evidence.
+用全局或项目级 Claude 指令承载重复工作规则，用 `docs/dev-log/` 承载项目记忆，用 `.claude/requirements/<date-slug>/` 承载需求级证据。

@@ -1,40 +1,40 @@
 # Docs System Pattern
 
-Use this when initializing a new project or repairing a project whose context is scattered across chat history.
+初始化新项目，或修复上下文散落在聊天历史里的项目时使用本文件。
 
-## Files And Jobs
+## 文件分工
 
 `CLAUDE.md`
-: Claude Code project memory. Include project background, repo layout, source-of-truth order, do-not-do boundaries, common commands, and validation expectations.
+: Claude Code 项目记忆。写入项目背景、仓库结构、事实来源顺序、边界、常用命令和验证要求。
 
 `docs/dev-log/CURRENT.md`
-: Current phase, recently completed work, verification, blockers, and next step. Update after meaningful work.
+: 当前阶段、最近完成、验证结果、阻塞项和下一步。每次有意义的工作后更新。
 
 `docs/dev-log/DECISIONS.md`
-: ADR-lite records for long-lived product, architecture, provider, deployment, data, or tooling decisions. Append only.
+: ADR-lite 决策记录。只记录长期有效的产品、架构、provider、部署、数据或工具决策。只追加，不重写历史。
 
 `docs/dev-log/ISSUES.md`
-: Real bugs, blockers, deferred risks, and resolved lessons with symptom, cause, handling, and related files.
+: 真实 bug、阻塞项、后置风险和已解决经验。记录现象、原因、处理方式和关联文件。
 
 `.claude/rules/docs-flow.md`
-: Extra local rule file installed by this skill. It reminds Claude to read dev-log and keep requirement evidence together without overwriting the project's main `CLAUDE.md`.
+: 本 skill 安装的本地规则文件。它提醒 Claude 读取 dev-log，并把需求证据放在一起，同时不覆盖项目主 `CLAUDE.md` 的职责。
 
 `.claude/requirements/`
-: Per-requirement packages containing request, spec, design docs, implementation tasks, validation, handoff, source assets, generated assets, demos, screenshots, reports, logs, and scratch files.
+: 单需求包目录。包含需求、规格、设计文档、实现任务、验证、handoff、源资源、生成资源、demo、截图、报告、日志和 scratch 文件。
 
-## Setup Steps
+## 初始化步骤
 
-1. Run the init workflow.
-2. Fill `CLAUDE.md` placeholders with the project's real stack and commands.
-3. Keep dev-log files factual and dated.
-4. Create one requirement package per meaningful user request or feature.
-5. At task end, update both the active requirement package and project-level dev-log when appropriate.
+1. 运行 init 工作流。
+2. 用项目真实技术栈和命令补齐 `CLAUDE.md` 占位内容。
+3. dev-log 保持事实化、带日期。
+4. 每个有意义的用户请求或功能创建一个需求包。
+5. 任务收尾时，按需更新当前需求包和项目级 dev-log。
 
-## Writing Rules
+## 写作规则
 
-- Keep docs concise and factual.
-- Preserve raw user intent in `REQUEST.md`.
-- Rewrite `SPEC.md` as the current executable scope.
-- Put durable decisions in `DECISIONS.md`, not only in `CURRENT.md`.
-- Put real problems in `ISSUES.md`, not vague warnings.
-- For Chinese projects, read and write Markdown as UTF-8.
+- 文档保持简洁、事实化。
+- 原始用户意图保存在 `REQUEST.md`。
+- `SPEC.md` 表达当前可执行范围。
+- 长期决策写进 `DECISIONS.md`，不要只放在 `CURRENT.md`。
+- 真实问题写进 `ISSUES.md`，不要写成模糊提醒。
+- 中文 Markdown 使用 UTF-8 读写。

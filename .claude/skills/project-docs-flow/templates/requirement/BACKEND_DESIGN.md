@@ -1,25 +1,25 @@
-# {{TITLE}} - Backend Design
+# {{TITLE}} - 后端设计
 
-## Summary
+## 摘要
 
-Describe backend responsibilities for this requirement.
+描述这个需求中的后端职责。
 
-## API And Contracts
-
-- 
-
-## Data And Persistence
+## API 与契约
 
 - 
 
-## Services And Flow
+## 数据与持久化
 
 - 
 
-## Failure Modes
+## 服务与流程
 
 - 
 
-## Backend Validation
+## 失败模式
+
+- 
+
+## 后端验证
 
 - 

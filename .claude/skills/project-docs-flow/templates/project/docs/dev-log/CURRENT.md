@@ -1,24 +1,24 @@
-# Current Development Status
+# 当前开发状态
 
-Last updated: {{DATE}}
+最后更新：{{DATE}}
 
-## Current Phase
+## 当前阶段
 
-Describe the current phase in one or two paragraphs.
+用一到两段描述当前阶段。
 
-## Recently Completed
+## 最近完成
 
 - {{DATE}}:
 
-## Verification
+## 验证
 
-- Passed:
-- Not run:
+- 已通过：
+- 未运行：
 
-## Blockers
+## 阻塞项
 
-- None.
+- 无。
 
-## Next Step
+## 下一步
 
 -

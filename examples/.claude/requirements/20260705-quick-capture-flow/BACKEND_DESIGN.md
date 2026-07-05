@@ -1,14 +1,14 @@
-# Quick Capture Flow - Backend Design
+# 快速记录流程 - 后端设计
 
-## Summary
+## 摘要
 
-Use mock backend responses for the demo. A real implementation would expose parse and confirm endpoints.
+demo 使用 mock 后端响应。真实实现中会提供 parse 和 confirm 两个接口。
 
-## API And Contracts
+## API 与契约
 
-- `POST /ai/parse`: accepts raw text and returns a structured preview.
-- `POST /ai/confirm`: accepts the confirmed preview and returns created note/task ids.
+- `POST /ai/parse`：接收原始文本，返回结构化预览。
+- `POST /ai/confirm`：接收用户确认后的预览，返回已创建记录的 id。
 
-## Backend Validation
+## 后端验证
 
-- Contract tests should cover note-only, task-only, mixed, and unknown input.
+- 契约测试应覆盖纯记录、纯任务、混合输入和无法识别输入。

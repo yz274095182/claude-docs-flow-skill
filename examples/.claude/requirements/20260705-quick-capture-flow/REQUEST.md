@@ -1,18 +1,18 @@
-# Quick Capture Flow - Request
+# 快速记录流程 - 需求原文
 
-Date: 20260705
-Slug: `20260705-quick-capture-flow`
+日期：20260705
+Slug：`20260705-quick-capture-flow`
 
-## Raw Request
+## 原始请求
 
-Create a mobile-first quick capture flow where the user writes one natural-language entry, sees a structured preview, confirms it, and then sees the saved result.
+创建一个移动端优先的快速记录流程：用户输入一段自然语言记录，看到结构化预览，确认后看到保存结果。
 
-## Success Criteria
+## 成功标准
 
-- The request package contains the product spec, backend design, frontend design, demo, visual evidence, validation, and handoff notes.
-- Demo and screenshot artifacts are grouped with the request.
+- 需求包包含产品规格、后端设计、前端设计、demo、视觉证据、验证记录和 handoff。
+- demo 和截图产物都跟随这个需求包归档。
 
-## Constraints
+## 约束
 
-- Use mock data in the demo.
-- Do not store secrets or real user data.
+- demo 使用 mock 数据。
+- 不存储 secret 或真实用户数据。

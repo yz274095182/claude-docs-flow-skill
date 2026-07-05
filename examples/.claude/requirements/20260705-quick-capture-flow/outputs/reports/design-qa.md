@@ -1,13 +1,13 @@
-# Design QA
+# 设计 QA
 
-## Reviewed
+## 已审查
 
-- Static demo has a clear three-step capture flow.
-- Text fits inside the mobile viewport.
-- Demo uses real UI states instead of a landing page.
+- 静态 demo 有清晰的三步记录流程。
+- 文本能放进移动端视口。
+- demo 展示真实 UI 状态，而不是落地页。
 
-## Follow-up For Real Product
+## 真实产品后续事项
 
-- Replace mock data with API integration.
-- Capture real browser screenshots after implementation.
-- Add keyboard and screen reader checks.
+- 将 mock 数据替换为 API 集成。
+- 实现后捕获真实浏览器截图。
+- 补充键盘和屏幕阅读器检查。

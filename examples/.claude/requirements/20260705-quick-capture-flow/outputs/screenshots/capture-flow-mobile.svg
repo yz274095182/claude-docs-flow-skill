@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="390" height="720" viewBox="0 0 390 720" role="img" aria-label="Quick capture flow mobile screenshot placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="720" viewBox="0 0 390 720" role="img" aria-label="快速记录流程移动端截图占位">
   <rect width="390" height="720" fill="#f4f6f8"/>
   <rect x="28" y="24" width="334" height="672" rx="8" fill="#ffffff"/>
-  <text x="52" y="82" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17202a">Quick Capture</text>
+  <text x="52" y="82" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17202a">快速记录</text>
   <rect x="52" y="118" width="286" height="146" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
-  <text x="68" y="150" font-family="Arial, sans-serif" font-size="14" fill="#667085">Raw input</text>
-  <text x="68" y="184" font-family="Arial, sans-serif" font-size="16" fill="#17202a">Tomorrow at 3pm remind me...</text>
+  <text x="68" y="150" font-family="Arial, sans-serif" font-size="14" fill="#667085">原始输入</text>
+  <text x="68" y="184" font-family="Arial, sans-serif" font-size="16" fill="#17202a">明天下午三点提醒我...</text>
   <rect x="68" y="216" width="92" height="34" rx="8" fill="#2563eb"/>
-  <text x="89" y="239" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">AI Parse</text>
+  <text x="89" y="239" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">结构化</text>
   <rect x="52" y="286" width="286" height="218" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
-  <text x="68" y="318" font-family="Arial, sans-serif" font-size="14" fill="#667085">AI preview</text>
-  <text x="68" y="356" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17202a">Reminder</text>
-  <text x="68" y="386" font-family="Arial, sans-serif" font-size="16" fill="#17202a">Call mom - tomorrow 3:00 PM</text>
-  <text x="68" y="426" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17202a">Note</text>
-  <text x="68" y="456" font-family="Arial, sans-serif" font-size="16" fill="#17202a">The baby kicked a lot today.</text>
+  <text x="68" y="318" font-family="Arial, sans-serif" font-size="14" fill="#667085">结构化预览</text>
+  <text x="68" y="356" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17202a">提醒事项</text>
+  <text x="68" y="386" font-family="Arial, sans-serif" font-size="16" fill="#17202a">给妈妈打电话 - 明天下午 3:00</text>
+  <text x="68" y="426" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#17202a">备忘录</text>
+  <text x="68" y="456" font-family="Arial, sans-serif" font-size="16" fill="#17202a">今天宝宝胎动很多。</text>
   <rect x="68" y="532" width="270" height="82" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
-  <text x="84" y="566" font-family="Arial, sans-serif" font-size="14" fill="#667085">Saved</text>
-  <text x="84" y="596" font-family="Arial, sans-serif" font-size="16" fill="#17202a">1 note and 1 task created.</text>
+  <text x="84" y="566" font-family="Arial, sans-serif" font-size="14" fill="#667085">已保存</text>
+  <text x="84" y="596" font-family="Arial, sans-serif" font-size="16" fill="#17202a">已创建 1 条备忘录和 1 个提醒事项。</text>
 </svg>

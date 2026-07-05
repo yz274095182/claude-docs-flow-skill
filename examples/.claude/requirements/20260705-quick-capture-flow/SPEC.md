@@ -1,23 +1,23 @@
-# Quick Capture Flow - Spec
+# 快速记录流程 - 可执行规格
 
-## Summary
+## 摘要
 
-Build a reviewable quick capture flow prototype. The user enters text, receives a structured preview, confirms, and lands on a saved result state.
+构建一个可审查的快速记录流程原型。用户输入文本，获得结构化预览，确认后进入已保存状态。
 
-## In Scope
+## 范围内
 
-- Natural-language input state.
-- AI parse preview state.
-- Confirmed result state.
-- Mobile demo artifact in `outputs/html/`.
+- 自然语言输入状态。
+- 结构化预览状态。
+- 确认保存结果状态。
+- `outputs/html/` 中的移动端 demo 产物。
 
-## Out Of Scope
+## 范围外
 
-- Real model calls.
-- Real persistence.
-- Authentication.
+- 真实模型调用。
+- 真实持久化。
+- 登录认证。
 
-## Acceptance Criteria
+## 验收标准
 
-- A reviewer can open the HTML demo and understand the flow.
-- Validation notes identify what was and was not tested.
+- 审查者能打开 HTML demo 并理解流程。
+- 验证记录能说明已测试和未测试内容。

@@ -1,8 +1,8 @@
 # Docs Flow Rules
 
-Use `.claude/requirements/<YYYYMMDD-slug>/` as the home for each meaningful requirement.
+每个有意义的需求都使用 `.claude/requirements/<YYYYMMDD-slug>/` 作为管理目录。
 
-Before working on a requirement, read:
+开始处理需求前，先读取：
 
 - `REQUEST.md`
 - `SPEC.md`
@@ -10,6 +10,6 @@ Before working on a requirement, read:
 - `VALIDATION.md`
 - `HANDOFF.md`
 
-Keep related backend design, frontend design, assets, HTML demos, screenshots, reports, logs, and scratch work inside the same requirement package.
+相关后端设计、前端设计、资源、HTML demo、截图、报告、日志和 scratch 工作都放在同一个需求包里。
 
-Before finishing a requirement task, update `VALIDATION.md` and `HANDOFF.md`. Also update `docs/dev-log/CURRENT.md`; append `DECISIONS.md` or `ISSUES.md` only for durable project-level changes.
+需求任务收尾前，更新 `VALIDATION.md` 和 `HANDOFF.md`。同时更新 `docs/dev-log/CURRENT.md`；只有出现项目级长期决策或真实问题时，才追加 `DECISIONS.md` 或 `ISSUES.md`。

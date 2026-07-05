@@ -1,26 +1,26 @@
-# Artifact Policy
+# 产物策略
 
-Use selective versioning.
+使用“精选入库”策略。
 
-## Track
+## 建议入库
 
-- Requirement docs and design docs.
-- HTML demos that explain or verify a UX.
-- Key screenshots that support visual QA, bug reports, or acceptance.
-- QA reports, test summaries, and review notes.
-- Source assets needed to reproduce the work.
-- Small generated assets that are part of the deliverable.
+- 需求文档和设计文档。
+- 能解释或验证 UX 的 HTML demo。
+- 支撑视觉 QA、bug 报告或验收的关键截图。
+- QA 报告、测试摘要和评审记录。
+- 复现工作所需的源资源。
+- 属于交付物的一小部分生成资源。
 
-## Ignore Or Delete
+## 忽略或删除
 
-- `scratch/` exploration.
-- Cache files and build outputs.
-- Personal Claude settings such as `.claude/settings.local.json`.
-- Temporary logs, huge raw logs, and repeated failed-output dumps.
-- Large binary exports unless they are explicitly part of the deliverable.
+- `scratch/` 里的探索内容。
+- 缓存文件和构建产物。
+- 个人 Claude 设置，例如 `.claude/settings.local.json`。
+- 临时日志、大型原始日志和重复失败输出。
+- 大型二进制导出，除非它们明确属于交付物。
 
-## Before Closing A Requirement
+## 需求收尾前
 
-Move durable evidence from `scratch/` into the correct `assets/` or `outputs/` folder. Delete or leave ignored anything that is not worth preserving.
+把值得长期保留的证据从 `scratch/` 移到正确的 `assets/` 或 `outputs/` 目录。没有保留价值的内容删除或保持忽略。
 
-Record all important validation evidence in `VALIDATION.md`, even when the raw output file is not tracked.
+所有重要验证证据都要写进 `VALIDATION.md`，即使原始输出文件本身不入库。

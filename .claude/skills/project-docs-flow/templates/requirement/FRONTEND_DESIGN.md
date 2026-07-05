@@ -1,26 +1,26 @@
-# {{TITLE}} - Frontend Design
+# {{TITLE}} - 前端设计
 
-## Summary
+## 摘要
 
-Describe user-facing behavior and UI flow.
+描述面向用户的行为和 UI 流程。
 
-## Screens Or States
-
-- 
-
-## Components And State
+## 页面或状态
 
 - 
 
-## Interaction Details
+## 组件与状态
 
 - 
 
-## Responsive And Accessibility Notes
+## 交互细节
 
 - 
 
-## Visual QA
+## 响应式与可访问性
 
-- Screenshots:
-- Known risks:
+- 
+
+## 视觉 QA
+
+- 截图：
+- 已知风险：

@@ -1,19 +1,19 @@
-# Quick Capture Flow - Validation
+# 快速记录流程 - 验证记录
 
-## Commands Run
+## 已运行命令
 
-- Not applicable for the static example.
+- 静态示例不需要运行命令。
 
-## Browser Or Manual Checks
+## 浏览器或手工检查
 
-- Demo HTML was reviewed as a static example artifact.
+- 已将 demo HTML 作为静态示例产物审查。
 
-## Artifacts Reviewed
+## 已审查产物
 
 - `outputs/html/capture-flow-demo.html`
 - `outputs/screenshots/capture-flow-mobile.svg`
 - `outputs/reports/design-qa.md`
 
-## Result
+## 结果
 
-Example package is complete enough to show the intended directory shape.
+示例需求包足以展示预期目录结构。
