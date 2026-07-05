@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quick Capture Flow Demo</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #f4f6f8;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #17202a;
+      }
+      .phone {
+        width: min(390px, 100vw);
+        min-height: 720px;
+        background: white;
+        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.16);
+        padding: 24px;
+      }
+      h1 {
+        margin: 0 0 20px;
+        font-size: 30px;
+        letter-spacing: 0;
+      }
+      .input, .card, .result {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      .muted {
+        color: #667085;
+        font-size: 14px;
+      }
+      button {
+        border: 0;
+        border-radius: 8px;
+        padding: 12px 14px;
+        background: #2563eb;
+        color: white;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="phone">
+      <h1>Quick Capture</h1>
+      <section class="input">
+        <p class="muted">Raw input</p>
+        <p>Tomorrow at 3pm remind me to call mom, and note that the baby kicked a lot today.</p>
+        <button>AI Parse</button>
+      </section>
+      <section class="card">
+        <p class="muted">AI preview</p>
+        <strong>Reminder</strong>
+        <p>Call mom - tomorrow 3:00 PM</p>
+        <strong>Note</strong>
+        <p>The baby kicked a lot today.</p>
+        <button>Confirm Save</button>
+      </section>
+      <section class="result">
+        <p class="muted">Saved</p>
+        <p>1 note and 1 task created.</p>
+      </section>
+    </main>
+  </body>
+</html>

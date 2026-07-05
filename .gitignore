@@ -1,0 +1,41 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.tmp/
+tmp/
+temp/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+# Claude local state. Keep .claude/skills tracked in this repository.
+.claude/settings.local.json
+.claude/settings.local.json.bak
+.claude/.cache/
+.claude/logs/
+
+# Requirement package scratch and throwaway logs.
+**/.claude/requirements/*/scratch/**
+!examples/.claude/requirements/*/scratch/.gitkeep
+**/.claude/requirements/*/outputs/logs/*.log
+**/.claude/requirements/*/outputs/logs/*.tmp
